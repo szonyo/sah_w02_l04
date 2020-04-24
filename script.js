@@ -63,6 +63,6 @@ colors.forEach((color)=> {
 });
 
 //i++ means i= i+1
-for (let i = 0; i < 100; i + 1) {
+for (let i = 0; i < 10; i + 1) {
     console.log('current number' + i);
 }
