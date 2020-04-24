@@ -16,8 +16,8 @@ $('p').toggleClass('green');
 $('#first').remove();
 
 $('#add-button').click(() => {
-    if($('main p'.length > 5)){
-    $('main').append('<p>Added a new p tag</p>');
+    if($('main p').length < 5){
+    $('main').append(`<p>Username: ${$('#name').val()}</p>`);
 } else { 
     $('main').append('<p class="green">Added a new p tag</p>');
 }
@@ -37,4 +37,32 @@ if (age>=18) {
     console.log('This person can drik.')
 } else {
 console.log ('This is a kid, no alcohol.')
+}
+
+//loops
+
+
+
+//$('main').append ('<div class="box"></div>');
+//$('main div: last-child').css('background', 'orange');
+//$('main').append ('<div class="box"></div>');
+//$('main div: last-child').css('background', 'yellow');
+//$('main').append ('<div class="box"></div>');
+//$('main div: last-child').css('background', 'purple');
+//$('main').append ('<div class="box"></div>');
+//$('main div: last-child').css('background', 'blue');
+//$('main').append ('<div class="box"></div>');
+//$('main div: last-child').css('background', 'green');
+
+let colors = ['orange', 'yellow', 'purple', 'blue', 'green'];
+
+colors.push('magenta');
+colors.forEach((color)=> {
+  $('main').append('<div class="box"></div>');
+  $('main div:last-child').css('background', color);
+});
+
+//i++ means i= i+1
+for (let i = 0; i < 100; i + 1) {
+    console.log('current number' + i);
 }
