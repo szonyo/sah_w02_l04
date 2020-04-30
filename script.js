@@ -34,7 +34,7 @@ $('#remove-button').click(removeFunction);
 let age = 29;
 
 if (age>=18) {
-    console.log('This person can drik.')
+    console.log('This person can drink.')
 } else {
 console.log ('This is a kid, no alcohol.')
 }
@@ -63,6 +63,21 @@ colors.forEach((color)=> {
 });
 
 //i++ means i= i+1
-for (let i = 0; i < 10; i + 1) {
-    console.log('current number' + i);
-}
+// for (let i = 0; i < 10; i + 1) {
+   // console.log('current number' + i);
+//}
+
+let post = {
+    author: "Szerb Antal",
+    content: "Utas és Holdvilág",
+    date: "1937-ben jelent meg",
+};
+console.log(post['author']);
+console.log(post.author);
+post.likes=2000;
+console.log(post.likes);
+
+let object = {colors: ["purple", "magenta", "lime", "blue"]};
+object.hasManyColors = object.colors.length > 3;
+
+
